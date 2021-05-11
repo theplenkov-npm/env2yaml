@@ -1,32 +1,21 @@
-env2yaml
-========
+Outputs environment variables to yaml
 
-Output environment variables to yaml
+### Usage
 
-[![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/env2yaml.svg)](https://npmjs.org/package/env2yaml)
-[![Downloads/week](https://img.shields.io/npm/dw/env2yaml.svg)](https://npmjs.org/package/env2yaml)
-[![License](https://img.shields.io/npm/l/env2yaml.svg)](https://github.com/https://github.com/ThePlenkov/env2yaml/blob/master/package.json)
-
-<!-- toc -->
-* [Usage](#usage)
-* [Commands](#commands)
-<!-- tocstop -->
-# Usage
-<!-- usage -->
-```sh-session
-$ npm install -g env2yaml
-$ env2yaml COMMAND
-running command...
-$ env2yaml (-v|--version|version)
-env2yaml/0.0.6 win32-x64 node-v14.16.1
-$ env2yaml --help [COMMAND]
-USAGE
-  $ env2yaml COMMAND
-...
 ```
-<!-- usagestop -->
-# Commands
-<!-- commands -->
+$ env2yaml [VARIABLES]
+```
 
-<!-- commandsstop -->
+### Arguments
+
+```
+VARIABLES Comma-separated list of variables to output
+```
+
+### Options
+
+```
+-h, --help show CLI help
+-o, --output=output [default: env.yaml] Output file
+-v, --version show CLI version
+```
