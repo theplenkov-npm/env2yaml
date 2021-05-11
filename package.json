@@ -51,7 +51,9 @@
     "posttest": "eslint . --ext .ts --config .eslintrc",
     "prepack": "rimraf lib && tsc -b && oclif-dev readme",
     "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
-    "version": "oclif-dev readme && git add README.md"
+    "version": "oclif-dev readme && git add README.md",
+    "preversion": "npm test",
+    "postversion": "git push && git push --follow-tags"
   },
   "types": "lib/index.d.ts"
 }
