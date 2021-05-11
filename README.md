@@ -19,7 +19,7 @@ $ npm install -g env2yaml
 $ env2yaml COMMAND
 running command...
 $ env2yaml (-v|--version|version)
-env2yaml/0.0.0 win32-x64 node-v14.16.1
+env2yaml/0.0.1 win32-x64 node-v14.16.1
 $ env2yaml --help [COMMAND]
 USAGE
   $ env2yaml COMMAND
