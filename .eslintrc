@@ -2,5 +2,16 @@
   "extends": [
     "oclif",
     "oclif-typescript"
-  ]
+  ],
+  "rules": {
+    "node/no-unpublished-require": "none",
+    "node/no-extraneous-require": "none",
+    "indent": [
+      "error",
+      2,
+      {
+        "MemberExpression": 1
+      }
+    ]
+  }
 }
