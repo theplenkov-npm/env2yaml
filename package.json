@@ -37,7 +37,7 @@
     "/bin",
     "/lib"
   ],
-  "homepage": "https://github.com/https://github.com/ThePlenkov/env2yaml",
+  "homepage": "https://github.com/theplenkov",
   "keywords": [
     "oclif"
   ],
@@ -46,7 +46,7 @@
   "oclif": {
     "bin": "env2yaml"
   },
-  "repository": "https://github.com/ThePlenkov/env2yaml",
+  "repository": "https://github.com/theplenkov-npm/env2yaml",
   "scripts": {
     "postversion": "git push && git push --follow-tags",
     "prepublish": "npx tsc"
