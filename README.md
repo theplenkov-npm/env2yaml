@@ -1,4 +1,9 @@
-Outputs environment variables to yaml
+Command line to store environment variables in yaml file
+
+### Install
+```
+npm i -g env2yaml
+```
 
 ### Usage
 
