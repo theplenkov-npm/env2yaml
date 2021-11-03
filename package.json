@@ -6,7 +6,7 @@
   "bin": {
     "env2yaml": "./bin/run"
   },
-  "bugs": "https://github.com/https://github.com/ThePlenkov/env2yaml/issues",
+  "bugs": "https://github.com/theplenkov-npm/env2yaml/issues",
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
