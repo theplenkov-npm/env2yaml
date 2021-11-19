@@ -26,7 +26,11 @@ class Env2Yaml extends Command {
     const {args, flags} = this.parse(Env2Yaml)
 
     const env = new Proxy(process.env, {
-      ownKeys: target => args.variables?.split(',') || Reflect.ownKeys(target),
+      ownKeys: target =>
+        args.variables
+          ?.split(',')
+          .filter((variable: PropertyKey) => Reflect.has(target, variable)) ||
+        Reflect.ownKeys(target),
     })
 
     writeFile(flags.output, stringify(env))
