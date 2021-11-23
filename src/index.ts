@@ -25,15 +25,22 @@ class Env2Yaml extends Command {
   async run() {
     const {args, flags} = this.parse(Env2Yaml)
 
+    const variables = args.variables?.split(',')
+
     const env = new Proxy(process.env, {
       ownKeys: target =>
-        args.variables
-          ?.split(',')
-          .filter((variable: PropertyKey) => Reflect.has(target, variable)) ||
-        Reflect.ownKeys(target),
+        variables.filter((variable: PropertyKey) =>
+          Reflect.has(target, variable)
+        ) || Reflect.ownKeys(target),
     })
 
-    writeFile(flags.output, stringify(env))
+    const yaml = stringify(env)
+
+    // outputs also
+    // eslint-disable-next-line no-console
+    variables?.length === 1 && console.log(env[variables[0]])
+
+    writeFile(flags.output, yaml)
   }
 }
 
