@@ -1,7 +1,7 @@
 {
   "name": "env2yaml",
   "description": "Output environment variables to yaml",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "author": "Petr Plenkov",
   "bin": {
     "env2yaml": "./bin/run"
