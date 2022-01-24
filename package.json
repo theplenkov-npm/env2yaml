@@ -1,7 +1,7 @@
 {
   "name": "env2yaml",
   "description": "Output environment variables to yaml",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "author": "Petr Plenkov",
   "bin": {
     "env2yaml": "./bin/run"
@@ -52,7 +52,7 @@
     "prepublish": "npx tsc",
     "test:all": "node bin/run",
     "test:one": "node bin/run npm_package_version",
-    "get:version": "node -p \"process.env.npm_package_version\""    
+    "get:version": "node -p \"process.env.npm_package_version\""
   },
   "types": "lib/index.d.ts"
 }
