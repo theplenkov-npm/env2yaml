@@ -29,7 +29,7 @@ class Env2Yaml extends Command {
 
     const env = new Proxy(process.env, {
       ownKeys: target =>
-        variables.filter((variable: PropertyKey) =>
+        variables?.filter((variable: PropertyKey) =>
           Reflect.has(target, variable)
         ) || Reflect.ownKeys(target),
     })
